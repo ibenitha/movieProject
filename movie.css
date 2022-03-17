@@ -1,0 +1,529 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.showcase-top{
+    position: relative;
+    z-index: 2;
+    height: 90px;
+    background-color:rgb(20, 17, 17);
+
+}
+
+.showcase-top img{
+    width: 140px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(40% , -50%);
+}
+
+.showcase-top a{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-60% , -50%);
+    color: darkslateblue;
+    background-color: goldenrod;
+    padding: 5px;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 5px;
+    width: 5%;
+
+}
+
+
+.btn:hover{
+    color: gold;
+    opacity: 0.9;
+    background-color: #034e88;
+}
+
+
+
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(images/Bg9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 60s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: goldenrod;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: darkslateblue;
+}
+.content a{
+    background: darkgoldenrod;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #034e88;
+    color: gold;
+}
+.content input{
+    position: absolute;
+    right: 465px;
+    top: 18vh;
+    width: 354px;
+    height: 2.5rem;
+    font-size: 1rem;
+    padding-left: 0.5rem;
+}
+
+@keyframes change{
+    0%
+    {
+        background-image: url(images/Bg5.jpg);
+    }
+    20%
+    {
+        background-image: url(images/Bg8.jpg);
+    }
+    40%
+    {
+        background-image: url(images/Bg1.jpg);
+    }
+    60%
+    {
+        background-image: url(images/Bgb.jpg);
+    }
+    80%
+    {
+        background-image: url(images/Bga.jpg);
+    }
+    100%
+    {
+        background-image: url(images/Bg6.jpg);
+    }
+}
+
+video {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  
+  }
+  .video-wrapper {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+
+  .nav ul{
+    display: flex;
+
+}
+.nav ul li{
+    list-style: none;
+  
+}
+.nav ul li a{
+    text-decoration: none;
+    padding: 0px 20px;
+    color: gold;
+    
+}
+.nav ul li a:hover{
+    color: darkslateblue;
+    font-weight: bolder;
+}
+
+
+  .hollywood-movies{
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+
+}
+.hollywood-inside h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.hollywood-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hollywood-inside h3{
+    font-size: 15px;
+   
+}
+.hollywood-inside img{
+   height: 250px;
+   border-radius: 10px;
+   transition: all 500ms ease-in-out;
+}
+.hollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.more1{
+position: absolute;
+ 
+}
+.more1 a{
+
+    color:teal;
+    font-weight: bolder;
+    text-decoration: none;
+
+}
+
+.tollywood-movies{
+
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+
+}
+.tollywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.tollywood-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tollywood-inside h3{
+    font-size: 15px;
+
+   
+}
+.tollywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.tollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.collywood-movies{
+    
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+}
+.collywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.collywood-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:25px;
+}
+.collywood-inside h3{
+    font-size: 15px;
+   
+}
+.collywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.collywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.more3{
+    position: absolute;
+    
+}
+.more3 a{
+    color:teal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.tollywood-movies{
+    
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+}
+.tollywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.tollywood-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.tollywood-inside h3{
+    font-size: 15px;
+
+}
+.tollywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.tollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.more2{
+    
+}
+.more2 a{
+   color: teal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.hollywood-movies{
+    
+    width:100%;
+    height: 100%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+
+}
+.hollywood-movies h1{
+    font-size: 20px;
+    color:darkslateblue;
+}
+.hollywood-container{
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+.hollywood-inside h3{
+    font-size: 15px;
+    
+}
+.hollywood-inside img{
+   height: 250px;
+   transition: all 500ms ease-in-out;
+   border-radius: 10px;
+}
+.hollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.more4{
+    
+}
+.more4 a{
+    color:teal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+.sollywood-movies{
+    
+    width:100%;
+    height: 75%;
+   background-color: black;
+    padding: 0px 20px;
+    color: white;
+
+}
+.sollywood-movies h1{
+    font-size: 20px;
+    color:rgb(18, 241, 241);
+}
+.sollywood-container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sollywood-inside h3{
+    font-size: 15px;
+   
+}
+.sollywood-inside img{
+   height: 250px;
+   border-radius: 10px;
+   transition: all 500ms ease-in-out;
+}
+.sollywood-inside img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.more5{
+
+ 
+}
+.more5 a{
+
+    color:teal;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+  
+
+  
+
+
+.footer{
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+    position: absolute;
+    z-index:1;
+    margin-left:250px;
+    margin-top:70px;
+    width:1000px;
+}
+
+.footer ,
+.footer a{
+    color: #999999;
+    font-size: 0.9rem;
+}
+
+.footer p{
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li{
+    line-height: 2.4;
+}
+
+
+main{
+    height: 100vh;
+    background: url(images/sig.jpg) fixed no-repeat;
+    background-size: cover;
+  }
+  #container{
+    width: 350px;
+    height: 500px;
+    background: inherit;
+    position: absolute;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    margin-left: -175px;
+    margin-top: -250px;
+    border-radius: 8px;
+  }
+  #container:before{
+    width: 400px;
+    height: 550px;
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    bottom: 0;
+    right: 0;
+    background: inherit;
+    box-shadow: inset 0 0 0 200px rgba(255,255,255,0.2);
+    filter: blur(10px);
+  }
+  form img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%;
+  }
+  form{
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  input{
+    background: 0;
+    width: 200px;
+    outline: 0;
+    border: 0;
+    border-bottom: 2px solid rgba(255,255,255, 0.3);
+    margin: 20px 0;
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color:aliceblue;
+  }
+  input[type="submit"]{
+    border: 0;
+    border-radius: 8px;
+    padding-bottom: 0;
+    height: 60px;
+    background: darkgoldenrod;
+    color: white;
+    cursor: pointer;
+    transition: all 600ms ease-in-out;
+  }
+  input[type="submit"]:hover{
+    background: darkslateblue;
+  }
+  span a{
+    color: rgba(243, 234, 234, 0.8);
+  }
